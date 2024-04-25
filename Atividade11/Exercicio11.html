@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //forma 1
+        var Funcionario1 = new Object();
+        Funcionario1.Matricula = "034";
+        Funcionario1.Nome = "Kauan Berti";
+        Funcionario1.Função = "Estoquista";
+
+        alert("Matricula: " + Funcionario1.Matricula + "\nNome: " + Funcionario1.Nome + "\nFunção: " + Funcionario1.Função);
+
+        //forma 2
+        var Funcionario2 = {
+            matricula: "035",
+            nome: "Alexandre Arantes",
+            função: "Programador"
+        };
+
+        alert("Matricula: " + Funcionario2.matricula + "\nNome: " + Funcionario2.nome + "\nFunção: " + Funcionario2.função);
+
+        //forma 3
+        function Funcionario(mat,nom,funcao){
+            this.matricula = mat;
+            this.nome = nom;
+            this.funcao = funcao;
+        }
+
+        var Funcionario3 = new Funcionario("036", "Filipe Lamego", "QA Master Ultra Power");
+        alert("Matricula: " + Funcionario3.matricula + "\nNome: " + Funcionario3.nome + "\nFunção: " + Funcionario3.funcao);
+    </script>
+</body>
+</html>
