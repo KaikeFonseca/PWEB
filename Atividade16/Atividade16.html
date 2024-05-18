@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos da Fatec Sorocaba</title>
+    <link rel="stylesheet" href="Atividade16.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Cursos Fatec Sorocaba</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="selecao"">
+                <p class="p_selecao">Selecione o curso desejado:</p>
+
+                <select id="curso" onchange="confirmarCurso()">
+                    <option value="">Selecione...</option>
+                    <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="Biomedicos">Sistemas Biomédicos</option>
+                    <option value="Fabricacao">Fabricação Mecânica</option>
+                    <option value="Logistica">Logística</option>
+                    <option value="Projetos">Projetos Mecânicos</option>
+                </select>
+            </div>
+
+            <div class="aviso">
+                <div class="form" id="confirmacao">
+                    <h2>Confirmar Curso</h2><br>
+                    <p>Deseja realmente abrir a página do curso <span id="cursoNome"></span>?</p>
+                    <button onclick="abrirCurso()">OK</button>
+                    <button onclick="cancelarConfirmacao()">Cancelar</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="Atividade16.js"></script>
+</body>
+
+</html>
