@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Principal</title>
+    <link rel="stylesheet" href="Atividade15.css">
+    <script src="Atividade15.js" defer></script>
+    
+</head>
+
+
+<body>
+    <header>
+        <h1>Formulário Principal</h1>
+    </header>
+    <main>  
+        <section>
+            <form class="formAtividade15" onsubmit="return validarCampos()">
+
+                <div class="formulario">
+                    <div class="nome">
+                        <label>Nome:</label><input class="campo_nome" type="text"><br>
+                        <label>E-mail:</label><input class="campo_E-mail" type="email"><br>
+                        <label>Comentario:</label><br><textarea class="campo_comentario" cols="60" rows="20"></textarea>
+                    </div>
+                </div>
+
+                
+                <div class="Pesquisa">
+                    <h2>Pesquisa</h2>
+                    <h3>Primeira vez nessa página?</h3>
+                    <div class="radio-button">
+                        <input type="radio" name="botao" class="campo_visita" value="sim"><label>Sim</label>
+                        <input type="radio" name="botao" class="campo_visita_nao" value="nao"><label>Não</label>
+                    </div> 
+                    <br>
+
+                    <div class="button">
+                        <button class="enviar" type="submit">Enviar</button>
+                        <button class="limpar" type="reset">Limpar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
